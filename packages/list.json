@@ -1,0 +1,20 @@
+[
+    {
+    "compName": "Search",
+    "compZhName": "模糊搜索选择器",
+    "compDesc": "模糊搜索选择器",
+    "compClassName": "search"
+    },
+    {
+        "compName": "Popover",
+        "compZhName": "气泡弹出框",
+        "compDesc": "气泡弹出框",
+        "compClassName": "Popover"
+    },
+    {
+        "compName": "Card",
+        "compZhName": "卡片",
+        "compDesc": "卡片",
+        "compClassName": "Card"
+    }
+]
