@@ -1,10 +1,10 @@
-# 模糊搜索组件
+## 模糊搜索组件
 <script setup>
-    import demo from './demo.vue'
+    import demo from './example.vue'
 </script>
 <demo/>
 
-## API
+### API
 参数     | 说明 | 类型 | 默认值
 ----------- | --------------|---------------|-----------------
 showPicker     | 弹出框显示 | boolean | 默认值
@@ -15,7 +15,7 @@ remote     | 是否远程搜索 | boolean | 默认值
 filterable     | 是否过滤 | boolean | 默认值
 param     | 确认回调传参，与选择器回参一致，需要定位选择器选项位置时使<br/>用，可不传 | string | 默认值
 
-## Events
+### Events
 事件名     | 说明 | 回调参数
 ----------- | --------------|---------------
 close     | 取消时触发 | 无

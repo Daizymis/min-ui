@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "prismjs": "^1.28.0",
     "vant": "^3.5.4",
     "vite-plugin-md": "^0.20.2",
     "vue": "^3.2.37",

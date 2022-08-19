@@ -17,7 +17,7 @@ const routes= [
         title: '卡片',
         name: 'Card',
         path: '/components/Card',
-        component: () => import(`../packages/Card/docs/README.md`)
+        component: () => import(`packages/card/docs/README.md`)
     }
 ];
 const routerConfig:RouterOptions = {

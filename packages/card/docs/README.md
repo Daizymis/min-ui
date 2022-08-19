@@ -1,20 +1,17 @@
-# 卡片
+## 卡片
 <script setup>
-    import demo from './demo.vue'
+    import demo from './example.vue'
 </script>
 <demo/>
 
-## API
-参数     | 说明 | 类型 | 默认值
------------ | --------------|---------------|-----------------
-shadow     | 弹出框展示的列表 | string | 'always'
+### API
+参数     | 说明 | 类型 | 可选值 | 默认值
+----------- | --------------|--------------|---------------|-----------------
+shadow     | 卡片阴影 | string | always/hover/never|'always'
 
-## Events
-与 van-popover一致
-
-## Slots
+### Slots
 名称     | 说明 | 参数
 ----------- | --------------|---------------
-header     | 弹出框列表内展示的内容 | 默认为无
-default     | 弹出框展示的内容 |
+header     | 卡片头 | 默认为无
+default     | 卡片默认内容 |
  
