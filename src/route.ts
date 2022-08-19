@@ -1,23 +1,24 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw, RouterOptions } from "vue-router";
+/* eslint-disable prettier/prettier */
+import { createRouter, createWebHashHistory, RouterOptions } from "vue-router";
 
 const routes= [
     {
         title: '选择器',
         name: 'Search',
         path: '/components/Search',
-        component: () => import(`../packages/search/docs/README.md`)
+        component: () => import(`packages/search/docs/README.md`)
     },
     {
         title: '气泡弹出框',
         name: 'Popover',
         path: '/components/Popover',
-        component: () => import(`../packages/BtnPopver/docs/README.md`)
+        component: () => import('packages/BtnPopver/docs/README.md')
     },
     {
         title: '卡片',
         name: 'Card',
         path: '/components/Card',
-        component: () => import(`packages/card/docs/README.md`)
+        component: () => import('packages/card/docs/README.md')
     }
 ];
 const routerConfig:RouterOptions = {

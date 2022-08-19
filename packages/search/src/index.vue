@@ -46,7 +46,6 @@ import {
   watch,
   computed,
 } from "vue";
-import { getIndexWithKey } from "@/utils/index";
 import { PickerInstance } from "vant";
 // interface Props {
 //   searchValue: string;
@@ -215,6 +214,15 @@ export default defineComponent({
         }
       });
     };
+    const getIndexWithKey = (key:any, list:any[], checkKey:any, flag = false)=> {
+    let index = -1;
+    if (flag === true && key) {
+      index = (list || []).indexOf(key);
+    } else if (flag === false && key) {
+      index = (list || []).findIndex((item:any )=> item[checkKey] == key);
+    }
+    return index;
+  }
     return {
       ...toRefs(props),
       searchText,

@@ -16,11 +16,10 @@
   <div class="example-source--hid" v-if="showSourceCode" @click="showSourceCode = false">隐藏源代码</div>
 </template>
 <script lang="ts" setup>
-
-const env = import.meta.env.MODE;
 import { nextTick, onMounted, ref } from "vue";
-import Prism from "prismjs";
+// import Prism from 'prismjs'
 import '@/assets/prism.css';
+const env = import.meta.env.MODE;
 
 const props = withDefaults(
   defineProps<{ compName?: string; demoName?: string }>(),
@@ -45,9 +44,9 @@ const getSourceCode = async () => {
       `/packages/${props.compName}/docs/${props.demoName}.vue`
     ).then((res) => res.text());
   }
-  nextTick(() => {
-    Prism.highlightAll();
-  });
+  // nextTick(() => {
+  //   Prism.highlightAll();
+  // });
 };
 const copySourceCode = () => {
     let el = document.createElement("textarea");

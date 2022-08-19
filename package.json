@@ -4,13 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite --config ./build/base.ts",
+    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.ts",
+    "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.ts",
     "preview": "vite preview"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "prismjs": "^1.28.0",
     "vant": "^3.5.4",
+    "vite-plugin-dts": "^1.4.1",
     "vite-plugin-md": "^0.20.2",
     "vue": "^3.2.37",
     "vue-router": "^4.1.3"
