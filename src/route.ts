@@ -6,7 +6,7 @@ const routes= [
         title: '选择器',
         name: 'Search',
         path: '/components/Search',
-        component: () => import(`packages/search/docs/README.md`)
+        component: () => import(`../packages/search/docs/README.md`)
     },
     {
         title: '气泡弹出框',

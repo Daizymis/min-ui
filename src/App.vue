@@ -14,6 +14,7 @@ const data = reactive({
   <div class="min-ui">
     <aside>
       <strong>基础组件</strong>
+      <m-card>hello world</m-card>
       <router-link
         v-for="(link, index) in data.links"
         :key="index"
