@@ -1,8 +1,8 @@
 {
   "name": "min-comp",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "type": "module",
-  "main":"dist/min-ui.umd.js",
+  "main": "dist/min-ui.es.js",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
     "dev": "vite --config ./build/base.ts",

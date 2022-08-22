@@ -7,14 +7,14 @@
     @open="open"
   >
     <slot name="default">
-      <van-row
+      <div
         v-for="(btn, index) in actions"
         :key="btn + index"
         @click="btnClick(btn)"
         class="hover-text"
       >
         <slot name="btn" :btn="btn">{{ btn }}</slot>
-      </van-row>
+      </div>
     </slot>
     <template #reference>
       <span ref="moreBtn">
