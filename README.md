@@ -16,8 +16,7 @@ import 'min-comp/dist/style.css'
 
 <m-card shadow="hover"> Always </m-card>
 ```
-
-
+![](main.png)
 ## package
 the main component package
 ```

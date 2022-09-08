@@ -1,17 +1,17 @@
 import { ref } from "vue";
 
 <template>
-<div>
+  <div class="demo-card">
     <button @click="showPicker = true">展示</button>
     <search
-        search-label="name"
-        search-value="name"
-        v-model:show-picker="showPicker"
-        :options="options"
-        remote
-        @change="changeValue"
-        @search="searchKeyWords"
-        @confirm="confirmValue"
+      search-label="name"
+      search-value="name"
+      v-model:show-picker="showPicker"
+      :options="options"
+      remote
+      @change="changeValue"
+      @search="searchKeyWords"
+      @confirm="confirmValue"
     ></search>
   </div>
 </template>
@@ -26,8 +26,7 @@ const options = [
   { name: "orange" },
   { name: "pineapple" },
 ];
-const changeValue = () => {
-};
+const changeValue = () => {};
 const confirmValue = () => {};
 const searchKeyWords = () => {};
 </script>

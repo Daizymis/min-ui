@@ -9,7 +9,7 @@
   text-align: right;
   background: #ffffff;
   width: 100%;
-  border: 1px solid #ebecf8;
+  border-bottom: 1px solid #ebecf8;
   height: 50px;
 }
 .navbar a {

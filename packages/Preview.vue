@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="example">
     <div class="example-showcase">
       <slot></slot>
@@ -13,12 +14,21 @@
       ><code class="language-html">{{ sourcecode }}</code></pre>
     </div>
   </div>
-  <div class="example-source--hid" v-if="showSourceCode" @click="showSourceCode = false">隐藏源代码</div>
+  <div
+    class="example-source--hid"
+    v-if="showSourceCode"
+    @click="showSourceCode = false"
+  >
+    隐藏源代码
+  </div>
+  </div>
+  
+ 
 </template>
 <script lang="ts" setup>
 import { nextTick, onMounted, ref } from "vue";
 // import Prism from 'prismjs'
-import '@/assets/prism.css';
+import "@/assets/prism.css";
 const env = import.meta.env.MODE;
 
 const props = withDefaults(
@@ -29,6 +39,7 @@ const props = withDefaults(
 );
 const showSourceCode = ref(false);
 const sourcecode = ref<any>("");
+
 onMounted(() => {
   getSourceCode();
 });
@@ -49,18 +60,26 @@ const getSourceCode = async () => {
   // });
 };
 const copySourceCode = () => {
-    let el = document.createElement("textarea");
-    el.value = sourcecode.value;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand("copy");
-    alert("复制成功");
-    document.body.removeChild(el);
-  };
+  let el = document.createElement("textarea");
+  el.value = sourcecode.value;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  alert("复制成功");
+  document.body.removeChild(el);
+};
+const dragIframe = (event) => {
+  console.log(event);
+};
+const dropIframe = (event) => {
+  console.log(event);
+};
 </script>
 <style scoped>
 .example {
   border: 1px solid #dcdfe6;
+  width: 80%;
+  margin-right: 10%;
 }
 .example-showcase {
   padding: 1.5rem;
@@ -87,10 +106,11 @@ const copySourceCode = () => {
 .example-source-btn span:hover {
   color: #409eff;
 }
-.example-source--hid{
+.example-source--hid {
   text-align: center;
   height: 60px;
   line-height: 60px;
   border: 1px solid #dcdfe6;
 }
+
 </style>

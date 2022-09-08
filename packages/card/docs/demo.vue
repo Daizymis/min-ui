@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="demo-card">
+    <h4>基础用法</h4>
     <m-card class="box-card">
       <template #> hello world </template>
     </m-card>
-    <m-card shadow="hover" class="box-card" header="my card">
+    <h4>带标题的卡片</h4>
+    <m-card shadow="hover" class="box-card" header="标题">
       <template #> hello world </template>
     </m-card>
   </div>
@@ -13,7 +15,7 @@ import mCard from "../src/index.vue";
 </script>
 <style scoped>
 .box-card {
-  width: 400px;
+  width: 200px;
   margin-top: 20px;
 }
 </style>

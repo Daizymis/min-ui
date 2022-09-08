@@ -37,7 +37,7 @@ const props = withDefaults(
 }
 .m-card__header {
   border-bottom: 1px solid #dddddd;
-  padding: 20px;
+  padding: 10px;
 }
 .m-card__body {
   padding: 20px;
